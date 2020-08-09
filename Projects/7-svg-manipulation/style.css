@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: turquoise;
+    height: 100vh;
+}
+
+#icon {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon .play {
+    stroke-width: 1.5px;
+    opacity: 1;
+    transition: 1s all ease-in-out;
+}
+
+#icon:hover .play {
+    opacity: 0;
+} 
+
+#icon .pause {
+    opacity: 0;
+    transition-delay: 1.3s;
+    transition: 1s all ease-in-out;
+}
+
+#icon:hover .pause {
+    opacity: 1;
+}
+
+#icon circle {
+    r: 10;
+    stroke-width: 1.5px;
+}
+
+#icon:hover circle {
+    animation: circle-animation 3s;
+    stroke-dasharray: 0;
+    stroke-dashoffset: 70;
+}
+
+@keyframes circle-animation {
+    0% {
+        stroke-dasharray: 0;
+        stroke-dashoffset: 0;
+    }
+
+    50% {
+        stroke-dasharray: 4;
+    }
+
+    100% {
+        stroke-dasharray: 0;
+        stroke-dashoffset: 70;
+    }
+}

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Recursive', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #111;
+}
+
+.wave-fill {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    /* background-color: #776f6f; */
+    overflow: hidden;
+    /* border: 1px solid #5c4c44; */
+}
+
+.water {
+    animation: water ease-in-out 10s;
+    transform: translateY(-20%);
+}
+
+.water::before {
+    content: 'Loading';
+    /* color: #34043d; */
+    color: #ffffff;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+
+span {
+    display: block;
+    width: 100%;
+}
+
+.wave {
+    background: url('./wave.png');
+    background-size: contain;
+    height: 20px;
+
+    animation: wave 10s ease-in-out infinite;
+}
+
+.deep-water {
+    background-color: rgb(4, 103, 246);
+    animation: complete 1s ease-in-out;
+    animation-delay: 10s;
+    animation-fill-mode: forwards;  
+    height: 200px;
+}
+
+@keyframes complete {
+    from {
+        background-color: rgb(4, 103, 246);
+    }
+
+    to {
+        background-color: rgb(8, 201, 143);
+    }
+}
+
+@keyframes wave {
+    from {
+        background-position: 0px 0px;
+    }
+
+    to {
+        background-position: 1000px 0px;
+    }
+}
+
+@keyframes water {
+    from{
+        transform: translateY(50%);
+    }
+
+    to {
+        transform: translateY(-20%);
+    }
+}

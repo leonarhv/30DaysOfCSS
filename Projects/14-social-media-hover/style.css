@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #111111;
+    height: 100vh;
+}
+
+ul {
+    position: relative;
+    display: flex;
+    list-style: none;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+ul li a .fab {
+    font-size: 6em;
+    color: #222;
+}
+
+ul li::before {
+    font-family: fontAwesome;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 6em;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    height: 0;
+}
+
+ul li:hover::before {
+    height: 100%;
+}
+
+/* facebook: f09a */
+/* twitter: f099 */
+/* Github: f09b */
+
+ul li:nth-child(1)::before {
+    margin-top: -3px;
+    content: "\f39e";
+    color: #3b5998;
+    border-bottom: 4px solid #3b5998;
+}
+
+ul li:nth-child(2)::before {
+    margin-top: -3px;
+    content: "\f09b";
+    color: #ffffff;
+    border-bottom: 4px solid #ffffff;
+}
+
+ul li:nth-child(3)::before {
+    margin-top: -3px;
+    content: "\f099";
+    color: #1DA1F2;
+    border-bottom: 4px solid #1DA1F2;
+}

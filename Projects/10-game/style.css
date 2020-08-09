@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    background-color: #000000;
+}
+
+.game-area {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-color: #2b2727;
+    border: 10px solid #ffffff;
+}
+
+.bar {
+    width: 200px;
+    height: 10px;
+    background-color: rgb(193, 224, 157);
+    position: absolute;
+    bottom: 50px;
+    left: calc(50% - 100px);
+    animation: bar 4s infinite linear;
+    -webkit-animation: bar 3s infinite linear alternate;
+}
+
+.ball {
+    position: absolute;
+    left: calc(50% - 20px);
+    bottom: 60px;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(193, 224, 157);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: ball 2s infinite linear;
+    -webkit-animation: ball 3s infinite linear;
+    animation-delay: 1.5s;
+}
+
+@keyframes ball {
+    0% {
+        left: calc(50% - 20px);
+        bottom: 60px;
+    }
+
+    25% {
+        left: 0;
+        bottom: calc(50% - 15px);
+    }
+
+    50% {
+        left: calc(50% - 20px);
+        bottom: calc(100% - 30px);
+    }
+
+    75% {
+        left: calc(100% - 30px);
+        bottom: calc(50% - 15px);
+    }
+}
+
+@keyframes bar {
+
+    /* 
+        Inicio - left: 10px;
+        meio - left: calc(50% - 20px);
+        fim - left: calc(100% - 210px);
+    */
+
+    from {
+        left: 10px;
+    }
+
+    to {
+        left: calc(100% - 210px);
+    }
+}
