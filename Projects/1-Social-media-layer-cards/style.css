@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    position: absolute;
+    top: calc(50% - 100px);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+ul li {
+    position: relative;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+
+ul li span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    transform: rotate(-30deg);
+    color: #fff;
+    font-size: 30px !important;
+
+    transition: 0.5s all ease-in-out;
+}
+
+ul li + li{
+    margin-left: 50px;
+}
+
+/* Cores Especificas */
+
+ul li#facebook span:nth-child(1),
+ul li#facebook span:nth-child(2) {
+    background-color: #dfe3ee;
+}
+
+ul li#facebook span:nth-child(3),
+ul li#facebook span:nth-child(4) {
+    background-color: #8b9dc3;
+}
+
+ul li#facebook span:nth-child(5) {
+    background-color: #3b5998;
+}
+
+/* INSTAGRAM */
+
+/* #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90% */
+
+ul li#instagram span:nth-child(1),
+ul li#instagram span:nth-child(2) {
+    background-color: #fab5af;
+}
+
+ul li#instagram span:nth-child(3),
+ul li#instagram span:nth-child(4) {
+    background-color: #f77266;
+}
+
+ul li#instagram span:nth-child(5) {
+    background-color: #fd5949;
+}
+
+/* WHATSAPP */
+
+ul li#whatsapp span:nth-child(1),
+ul li#whatsapp span:nth-child(2) {
+    background-color: #65f59a;
+}
+
+ul li#whatsapp span:nth-child(3),
+ul li#whatsapp span:nth-child(4) {
+    background-color: #46e27f;
+}
+
+ul li#whatsapp span:nth-child(5) {
+    background-color: #25D366;
+}
+
+/* LINKEDIN */
+/* #2867B2 */
+
+ul li#linkedin span:nth-child(1),
+ul li#linkedin span:nth-child(2) {
+    background-color: #4b87d1;
+}
+
+ul li#linkedin span:nth-child(3),
+ul li#linkedin span:nth-child(4) {
+    background-color: #3775c0;
+}
+
+ul li#linkedin span:nth-child(5) {
+    background-color: #2867B2;
+}
+
+/* TWITTER */
+/* #1DA1F2 */
+
+ul li#twitter span:nth-child(1),
+ul li#twitter span:nth-child(2) {
+    background-color: #64bef7;
+}
+
+ul li#twitter span:nth-child(3),
+ul li#twitter span:nth-child(4) {
+    background-color: #49b5f8;
+}
+
+ul li#twitter span:nth-child(5) {
+    background-color: #1DA1F2;
+}
+
+/* Hover Effect */
+
+ul li:hover span:nth-child(1) {
+    opacity: .5;
+}
+
+ul li:hover span:nth-child(2) {
+    transform: translateY(-10px) rotate(-30deg);
+}
+
+ul li:hover span:nth-child(3) {
+    transform: translateY(-20px) rotate(-30deg);
+    opacity: .75;
+}
+
+ul li:hover span:nth-child(4) {
+    transform: translateY(-30px) rotate(-30deg);
+    background-color: #8b9dc3;
+}
+
+ul li:hover span:nth-child(5) {
+    transform: translateY(-40px) rotate(-30deg);
+}
