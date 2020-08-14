@@ -92,3 +92,18 @@ A ideia geral é melhorar as habilidades com CSS criando um mini projeto por dia
 <div style="text-align:center">
 <img src="./assets/gifs/16.gif" alt="Desafio 16">
 </div>
+
+## Dia 17 - Botões Neon
+<div style="text-align:center">
+<img src="./assets/gifs/17.gif" alt="Desafio 17">
+</div>
+
+## Dia 18 - Card com botão para mais informações
+<div style="text-align:center">
+<img src="./assets/gifs/18.gif" alt="Desafio 18">
+</div>
+
+## Dia 19 - Botão com efeito de fundo liquido
+<div style="text-align:center">
+<img src="./assets/gifs/19.gif" alt="Desafio 19">
+</div>
