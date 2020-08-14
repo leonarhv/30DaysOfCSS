@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0c0c0c;
+}
+
+a {
+    position: relative;
+    padding: 20px 50px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 200px;
+    overflow: hidden;
+}
+
+a span {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 8px;
+}
+
+a .liquid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: #4973ff;
+    box-shadow: inset 0px 0 50px rgba(0, 0, 0, .5);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+a:hover .liquid {
+    top: -120px;
+}
+a .liquid::before,
+a .liquid::after {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -80px;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    -webkit-transform: translate(-50%, -75%);
+    -moz-transform: translate(-50%, -75%);
+    -ms-transform: translate(-50%, -75%);
+    -o-transform: translate(-50%, -75%);
+}
+
+a .liquid::before {
+    background: rgba(20, 20, 20, 1);
+    border-radius: 45%;
+    -webkit-border-radius: 45%;
+    -moz-border-radius: 45%;
+    -ms-border-radius: 45%;
+    -o-border-radius: 45%;
+    animation: animate 5s linear infinite;
+    -webkit-animation: animate 5s linear infinite;
+}
+
+a .liquid::after {
+    background: rgba(20, 20, 20, 0.5);
+    border-radius: 40%;
+    -webkit-border-radius: 40%;
+    -moz-border-radius: 40%;
+    -ms-border-radius: 40%;
+    -o-border-radius: 40%;
+    animation: animate 5s linear infinite;
+    -webkit-animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -75%) rotate(0deg);
+        -webkit-transform: translate(-50%, -75%) rotate(0deg);
+        -moz-transform: translate(-50%, -75%) rotate(0deg);
+        -ms-transform: translate(-50%, -75%) rotate(0deg);
+        -o-transform: translate(-50%, -75%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -75%) rotate(260deg);
+        -webkit-transform: translate(-50%, -75%) rotate(260deg);
+        -moz-transform: translate(-50%, -75%) rotate(260deg);
+        -ms-transform: translate(-50%, -75%) rotate(260deg);
+        -o-transform: translate(-50%, -75%) rotate(260deg);
+}
+}
