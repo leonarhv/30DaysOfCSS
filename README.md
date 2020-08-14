@@ -107,3 +107,8 @@ A ideia geral é melhorar as habilidades com CSS criando um mini projeto por dia
 <div style="text-align:center">
 <img src="./assets/gifs/19.gif" alt="Desafio 19">
 </div>
+
+## Dia 20 - Splash Background
+<div style="text-align:center">
+<img src="./assets/gifs/20.gif" alt="Desafio 20">
+</div>
