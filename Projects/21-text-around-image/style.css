@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-color: #f83800; */
+    background-color: #f90801;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    margin-bottom: 50px;
+    color: #ffffff;
+    font-size: 67px;
+}
+
+.container {
+    width: 1000px;
+    height: fit-content;
+}
+
+.shape {
+    width: 300px;
+    height: 300px;
+    shape-outside: url(super-mario-png4.png);
+    shape-image-threshold: 0.5;
+    shape-margin: 10px;
+    float: left;
+    margin-top: 100px;
+    transition: 0.5s all ease-in-out;
+    -webkit-transition: 0.5s all ease-in-out;
+    -moz-transition: 0.5s all ease-in-out;
+    -ms-transition: 0.5s all ease-in-out;
+    -o-transition: 0.5s all ease-in-out;
+}
+
+.shape:hover {
+    margin-left: 50px;
+}
+
+p {
+    font-size: 24px;
+    color: ivory;
+    font-family: cursive;
+}
