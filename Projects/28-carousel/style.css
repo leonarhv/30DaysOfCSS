@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #50317B;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+}
+
+.slides .slide {
+    width: 20%;
+    height: 100%;
+    transition: .6s all ease-in-out;
+    -webkit-transition: .6s all ease-in-out;
+    -moz-transition: .6s all ease-in-out;
+    -ms-transition: .6s all ease-in-out;
+    -o-transition: .6s all ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.selectors {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.selectors label {
+    cursor: pointer;
+    width: 80px;
+    height: 20px;
+    border: 3px solid #fff;
+    margin: 10px;
+    transition: .2s ease-in;
+    -webkit-transition: .2s ease-in;
+    -moz-transition: .2s ease-in;
+    -ms-transition: .2s ease-in;
+    -o-transition: .2s ease-in;
+}
+
+.selectors label:hover {
+    background: #fff;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+}
+
+/* Fill Selector */
+
+#s1:checked ~ .selectors label[for="s1"] {
+    background-color: #fff;
+}
+
+#s2:checked ~ .selectors label[for="s2"] {
+    background-color: #fff;
+}
+
+#s3:checked ~ .selectors label[for="s3"] {
+    background-color: #fff;
+}
+
+#s4:checked ~ .selectors label[for="s4"] {
+    background-color: #fff;
+}
+
+#s5:checked ~ .selectors label[for="s5"] {
+    background-color: #fff;
+}
+
+/* Slides navigation logic */
+
+#s1:checked ~ .slides .slide:nth-child(1) {
+    margin-left: 0%;
+}
+
+#s2:checked ~ .slides .slide:nth-child(1) {
+    margin-left: -20%;
+}
+
+#s3:checked ~ .slides .slide:nth-child(1) {
+    margin-left: -40%;
+}
+
+#s4:checked ~ .slides .slide:nth-child(1) {
+    margin-left: -60%;
+}
+
+#s5:checked ~ .slides .slide:nth-child(1) {
+    margin-left: -80%;
+}
